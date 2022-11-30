@@ -1,70 +1,63 @@
-# Getting Started with Create React App
+# React Netflix Clone
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este es un sitio experimental que fué creado con la intención de poner en práctica React.js en un proyecto sencillo.
 
-## Available Scripts
+La idea de clonar parcialmente el sitio web de Netflix me dió la posibilidad de replicar los comportamientos de diferentes componentes como menúes, sliders, buscador, video, etc. Además me permitió hacer consumo de una api que fué generada con Firebase.
 
-In the project directory, you can run:
+Creo que uno aprende "haciendo" y es por eso que decidí crear este mini proyecto, el cual me llevó una semana, trabajando aprox 3 hrs. por día.
 
-### `npm start`
+### Características principales:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Reproducción automática de video: Tal como sucede en Netflix, el video principal se reproduce automáticamente y al hacer scroll se detiene. Los controles de la derecha permiten activar o desactivar el sonido cuando el video se está reproduciendo y cuando finaliza se puede repetir la reproducción del mismo.
+- Carusel de series y películas: Se puede explorar el catálogo utilizando el carousel de cada categoría, usando las flechitas o bien haciendo "slide" con el mouse.
+- Diferentes categorías: El catálogo está separado en diferentes categorías ("Tendencias", "Películas dramáticas", etc)
+- Modal de previsualización: Al hacer click en un item se abrirá el modal de previsualización donde se muestra la información básica y otros títulos sugeridos.
+- Sitio responsivo: El sitio es completamente responsivo, y se adapta a cualquier dispositivo móvil.
+- Consumo de base de datos: El sitio consume datos de una api creada con Firebase. Además se hizo un trabajo de edición de logos, miniaturas y covers para los títulos.
+- Campo de búsqueda: Más que un búsqueda lo que hace el buscador es filtrar por coincidencia en el nombre de la serie o película y muestra los resultados obtenidos en primer orden.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Instalación
 
-### `npm test`
+1. Clonar el repositorio
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2. En la raíz del proyecto ejecutar el comando 
 
-### `npm run build`
+   ```
+   npm install
+   ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+   Esto instala todas las dependencias del proyecto.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+3. Ejecutar  
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+   ```
+   npm start
+   ```
 
-### `npm run eject`
+    para correr el proyecto, que estará disponible en http://localhost:3000
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Dependencias
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Uso de React Bootstrap para dar estilos básicos a la app.
 
-## Learn More
+Uso de React Router Dom para la navegación.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Uso de React Icons para utilización de los íconos de la app.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Uso de React Slick para sliders y carousels
 
-### Code Splitting
+Uso de Firebase para la api
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Aplicación en funcionamiento
 
-### Making a Progressive Web App
+La app se encuentra alojada en el siguiente dominio: https://react-netflix-clone-by-emanocera.netlify.app/
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### Autor
 
-### Advanced Configuration
+Emmanuel Nocera - Desarrollador Front-End
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Noviembre 2022

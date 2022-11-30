@@ -1,0 +1,13 @@
+.content {
+    margin-top: -80px;
+    padding-bottom: 50px;
+    position: relative;
+    z-index: 1;
+}
+
+@media (max-width: 1280px) {
+    .content {
+        margin-top: 60px;
+        padding-bottom: 0;
+    }
+}

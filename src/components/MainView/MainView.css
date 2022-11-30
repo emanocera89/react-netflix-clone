@@ -1,0 +1,116 @@
+.main-view {
+    width: 100%;
+    height: 46vw;
+    background-color: #000;
+    overflow: hidden;
+    position: relative;
+}
+
+.main-view:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    background-image: linear-gradient(0deg, rgba(20, 20, 20, 1) 10%, transparent);
+    z-index: 1;
+}
+
+.main-view .caption-container {
+    position: absolute;
+    width: 100%;
+    bottom: 30%;
+    z-index: 2;
+}
+
+.main-view .caption-container .container {
+    position: relative;
+}
+
+.main-view .caption-content {
+    width: 36%;
+}
+
+.main-view .caption-content .preview-logo {
+    margin-bottom: 20px;
+}
+
+.main-view .caption-content .description {
+    font-size: 18px;
+    line-height: 1.4;
+    overflow: hidden;
+    /*transition: all ease .8s;*/
+}
+
+.main-view .caption-content .button-group-inline {
+    margin-top: 30px;
+}
+
+.main-view .caption-content button {
+    padding: 10px 28px;
+    font-size: 18px;
+    font-weight: 500;
+    margin-right: 10px;
+}
+
+.main-view .main-cover {
+    opacity: .9;
+}
+
+.main-view .preview-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: auto;
+    transition: opacity ease .8s;
+}
+
+.main-view.video-hidden .preview-video {
+    opacity: 0;
+}
+
+.main-view .button-layer {
+    position: absolute;
+    bottom: 35%;
+    z-index: 10;
+    right: 0;
+    display: flex;
+}
+
+.main-view .button-layer .action-button {
+    width: 44px;
+    height: 44px;
+    border: solid 1px #fff;
+    background: transparent;
+    padding: 0;
+    color: #fff;
+    border-radius: 50%;
+    display: inline-flex;
+    font-size: 22px;
+}
+
+.main-view .button-layer .action-button svg {
+    margin: auto;
+}
+
+.main-view .button-layer .maturity-rating {
+    align-items: center;
+    background-color: rgba(51, 51, 51, .6);
+    border: 3px #dcdcdc;
+    border-left-style: solid;
+    box-sizing: border-box;
+    display: flex;
+    font-size: 1.1vw;
+    height: 2.4vw;
+    padding: 0.5vw 3.5vw 0.5vw 0.8vw;
+    margin: auto 0 auto 20px;
+}
+
+@media (max-width: 1280px) {
+    .main-view {
+        display: none;
+    }
+}

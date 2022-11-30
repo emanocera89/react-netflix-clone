@@ -1,0 +1,257 @@
+.pmodal {
+    max-width: 850px;
+    width: 850px;
+}
+
+.pmodal .modal-content {
+    background-color: rgb(20, 20, 20);
+    color: #fff;
+}
+
+.pmodal .modal-header {
+    position: relative;
+    padding: 0;
+    overflow: hidden;
+    display: block;
+    border: none;
+}
+
+.pmodal .main-cover {
+    opacity: .85;
+}
+
+.pmodal .modal-header .button-close {
+    width: 36px;
+    height: 36px;
+    border: none;
+    padding: 0;
+    text-align: center;
+    border-radius: 50%;
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    background-color: #181818;
+    z-index: 10;
+    color: #fff;
+    font-size: 32px;
+    display: inline-flex;
+}
+
+.pmodal .modal-header .button-close svg {
+    margin: auto;
+}
+
+.pmodal .cover-container {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.pmodal .cover-container:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    background-image: linear-gradient(0deg, rgba(20, 20, 20, 1) 10%, transparent);
+    z-index: 1;
+}
+
+.pmodal .title-logo-wrapper {
+    max-width: 380px;
+    margin-left: 50px;
+    margin-bottom: 30px;
+}
+
+.pmodal .buttons-container {
+    position: absolute;
+    bottom: 10%;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+}
+
+.pmodal .buttons-container .container-fluid {
+    display: flex;
+}
+
+.pmodal .buttons-container .btn {
+    padding: 8px 28px;
+    font-size: 18px;
+    font-weight: 500;
+    margin-right: 10px;
+}
+
+.pmodal .action-button {
+    width: 42px;
+    height: 42px;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    background-color: #2a2a2a;
+    color: #fff;
+    border-radius: 50%;
+    margin: auto 10px auto 0px;
+    display: inline-flex;
+}
+
+.pmodal .action-button svg {
+    margin: auto;
+    font-size: 20px;
+}
+
+.pmodal .item-details {
+    font-size: 16px;
+}
+
+.pmodal .item-details span {
+    margin-right: 10px;
+}
+
+.pmodal .item-details .match-score {
+    color: #46d369;
+    font-weight: 500;
+}
+
+.pmodal .maturity-rating {
+    border: 1px solid hsla(0, 0%, 100%, .4);
+    overflow: hidden;
+    padding: 0 0.4em;
+    text-overflow: ellipsis;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+.pmodal .modal-body {
+    padding: 0 0 50px;
+    border: none;
+}
+
+.pmodal .section-header {
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    margin-top: 48px;
+}
+
+.pmodal .item-list {
+    position: relative;
+}
+
+.pmodal .item-list .list-track {
+    max-height: 1040px;
+    padding-bottom: 50px;
+    overflow: hidden;
+}
+
+.pmodal .item-list.expanded .list-track {
+    max-height: 100%;
+}
+
+.pmodal .item-list .list-track:before {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background-image: linear-gradient(0deg, rgba(20, 20, 20, 1) 10%, transparent);
+    z-index: 1;
+}
+
+.pmodal .item-list .list-track:after {
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    border-bottom: solid #575757 1px;
+    z-index: 1;
+}
+
+.pmodal .item-list .action-button.expand {
+    position: absolute;
+    bottom: -21px;
+    z-index: 4;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+}
+
+.pmodal .item-list.expanded .action-button.expand svg {
+    transform: rotate(-180deg);
+}
+
+.pmodal .title-details .about-row {
+    font-size: 15px;
+    margin: 8px 0;
+    font-size: 14px;
+}
+
+.pmodal .title-details .about-row label {
+    color: #777;
+    margin-right: 5px;
+}
+
+.pmodal .title-details .about-row > div {
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.pmodal .item-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -10px;
+}
+
+.pmodal .item-row > .item-col {
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+    padding: 0 10px;
+}
+
+@media (max-width: 1280px) {
+    .pmodal {
+        width: 100%;
+    }
+
+    .pmodal .title-logo-wrapper {
+        max-width: 50%;
+        margin: 20px 0;
+        padding: 0 0 0 30px;
+    }
+
+    .pmodal .section-header {
+        font-size: 21px;
+    }
+
+    .pmodal .buttons-container .btn {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 680px) {
+    .pmodal {
+        margin: 0;
+    }
+
+    .pmodal .modal-header {
+        border-radius: 0;
+    }
+
+    .pmodal .item-row > .item-col {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+@media (max-width: 480px) {
+    .pmodal .item-row > .item-col {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .pmodal .itemcard-container {
+        height: auto;
+    }
+}

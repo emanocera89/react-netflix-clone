@@ -1,38 +1,78 @@
-.App {
-  text-align: center;
+@font-face {
+  font-family: NetflixSans;
+  font-weight: 300;
+  src: url(./fonts/NetflixSans-Light.otf);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+  font-family: NetflixSans;
+  font-weight: 400;
+  src: url(./fonts/NetflixSans-Regular.otf);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@font-face {
+  font-family: NetflixSans;
+  font-weight: 500;
+  src: url(./fonts/NetflixSans-Medium.otf);
+}
+
+
+@font-face {
+  font-family: NetflixSans;
+  font-weight: 700;
+  src: url(./fonts/NetflixSans-Bold.otf);
+}
+
+body {
+  background-color: #141414;
+  color: #fff;
+  font-family: 'NetflixSans';
+}
+
+h2 {
+  font-size: 21px;
+  margin-bottom: 10px;
+}
+
+.container-fluid {
+  padding: 0 50px;
+}
+
+.btn {
+  border-radius: 4px;
+  display: inline-flex;
+}
+
+.btn .button-label {
+  display: table;
+  margin: auto 0;
+}
+
+.btn-secondary {
+  background-color: rgba(109, 109, 110, 0.7);
+  border-color: rgba(109, 109, 110, 0.7);
+}
+
+.btn-secondary:hover {
+  background-color: rgba(109, 109, 110, 0.4);
+  border-color: rgba(109, 109, 110, 0.4);
+}
+
+@media (max-width: 1280px) {
+  .container-fluid,
+  .container {
+    padding: 0 30px !important;
+    max-width: 100% !important;
+  }
+
+  .d-mobile-hidden {
+    display: none;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+@media (max-width: 480px) {
+  .container-fluid,
+  .container {
+    padding: 0 15px !important;
   }
 }

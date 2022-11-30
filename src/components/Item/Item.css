@@ -1,0 +1,24 @@
+.item-container {
+    padding: 0 3px;
+}
+
+.item-container .item-thumb-container {
+    overflow: hidden;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.item-container .item-thumb-container img {
+    transition: transform ease .4s;
+    border-radius: 4px;
+}
+
+.item-container .item-thumb-container:hover img {
+    transform: scale(1.1, 1.1);
+}
+
+@media (max-width: 1280px) {
+    .item-container .item-thumb-container img {
+        border-radius: 0;
+    }
+}

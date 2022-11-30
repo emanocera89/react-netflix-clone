@@ -1,0 +1,63 @@
+.user-container {
+    height: 100%;
+    position: relative;
+    display: flex;
+}
+
+.user-container .user-button {
+    position: relative;
+    height: 100%;
+    display: flex;
+    padding: 0 10px;
+    color: #fff;
+}
+
+.user-container .user-button .caret-icon {
+    margin: auto 0 auto 8px;
+    transition: transform ease .4s;
+}
+
+.user-container .user-button:hover .caret-icon {
+    transform: rotate(180deg);
+}
+
+.user-container .user-button .user-avatar {
+    margin: auto;
+    border-radius: 4px;
+}
+
+.user-container .user-dropdown {
+    width: 220px;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: rgba(20,20,20,0.9);
+}
+
+.user-container .user-dropdown .user-list {
+    list-style: none;
+    padding: 10px 0;
+}
+
+.user-container .user-dropdown .user-list li {
+    padding: 6px 10px;
+    font-size: 14px;
+}
+
+.user-container .user-dropdown .user-list li span {
+    margin-left: 10px;
+}
+
+.user-container .user-dropdown .user-list li img {
+    border-radius: 4px;
+}
+
+.user-container .user-dropdown .user-list li:last-child {
+    border-top: 1px solid hsla(0,0%,100%,.25);
+    text-align: center;
+    padding-top: 16px;
+}
+
+.user-container .user-dropdown .user-list li:last-child span {
+    margin: 0;
+}

@@ -1,0 +1,11 @@
+.item-list-container {
+    margin: 24px 0;
+    display: inline-block;
+    width: 100%;
+}
+
+@media (max-width: 1280px) {
+    .item-list-container h2 {
+        color: #999;
+    }
+}

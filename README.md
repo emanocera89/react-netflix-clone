@@ -54,7 +54,7 @@ Uso de Firebase para la api
 
 ## Aplicación en funcionamiento
 
-La app se encuentra alojada en el siguiente dominio: [https://react-netflix-clone-by-emanocera.netlify.app/](https://react-netflix-clone-by-enocera.netlify.app/)
+La app se encuentra alojada en el siguiente dominio: [https://rnc-by-enocera.netlify.app/](https://rnc-by-enocera.netlify.app/)
 
 ### Autor
 
